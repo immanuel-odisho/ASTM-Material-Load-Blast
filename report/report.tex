@@ -1,0 +1,127 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{paralist}
+\usepackage{listings}
+\usepackage{booktabs}
+
+\oddsidemargin 0mm
+\evensidemargin 0mm
+\textwidth 160mm
+\textheight 200mm
+
+\pagestyle {plain}
+\pagenumbering{arabic}
+
+\newcounter{stepnum}
+
+\title{Assignment 2 Report}
+\author{Your Name and MACID}
+\date{\today}
+
+\begin {document}
+
+\maketitle
+
+Introductory blurb.
+
+\section{Testing of the Original Program}
+
+Description of approach to testing.  Rationale for test case selection.  Summary
+of results.  Any problems uncovered through testing.
+
+\section{Results of Testing Partner's Code}
+
+Summary of results.
+
+\section{Discussion of Test Results}
+
+\subsection{Problems with Original Code}
+
+\subsection{Problems with Partner's Code}
+
+\subsection{Problems with Assignment Specification}
+
+\section{Answers}
+
+\begin{enumerate}
+
+\item What is the mathematical specification of the \texttt{SeqServices} access
+  program isInBounds(X, x) if the assumption that X is ascending is removed?
+
+\item How would you modify \texttt{CurveADT.py} to support cubic interpolation?
+
+\item What is your critique of the CurveADT module's interface.  In particular,
+  comment on whether the exported access programs provide an interface that is
+  consistent, essential, general, minimal and opaque.
+
+\item What is your critique of the Data abstract object's interface.  In
+  particular, comment on whether the exported access programs provide an
+  interface that is consistent, essential, general, minimal and opaque.
+
+\end{enumerate}
+
+\newpage
+
+\lstset{language=Python, basicstyle=\tiny, breaklines=true, showspaces=false,
+  showstringspaces=false, breakatwhitespace=true}
+
+\def\thesection{\Alph{section}}
+
+\section{Code for CurveADT.py}
+
+\noindent \lstinputlisting{../src/CurveADT.py}
+
+\newpage
+
+\section{Code for Data.py}
+
+\noindent \lstinputlisting{../src/Data.py}
+
+\newpage
+
+\section{Code for SeqServices.py}
+
+\noindent \lstinputlisting{../src/SeqServices.py}
+
+\newpage
+
+\section{Code for Plot.py}
+
+\noindent \lstinputlisting{../src/Plot.py}
+
+\newpage
+
+\section{Code for Load.py}
+
+\noindent \lstinputlisting{../src/Load.py}
+
+\newpage
+
+\section{Code for Partner's CurveADT.py}
+
+% Uncomment the line below when partner files have been pushed to your repo
+%\noindent \lstinputlisting{../partner/CurveADT.py}
+
+\newpage
+
+\section{Code for Partner's Data.py}
+
+% Uncomment the line below when partner files have been pushed to your repo
+%\noindent \lstinputlisting{../partner/Data.py}
+
+\newpage
+
+\section{Code for Partner's SeqServices.py}
+
+% Uncomment the line below when partner files have been pushed to your repo
+%\noindent \lstinputlisting{../partner/SeqServices.py}
+
+\newpage
+
+\section{Makefile}
+
+\lstset{language=make}
+\noindent \lstinputlisting{../Makefile}
+
+\end {document}
